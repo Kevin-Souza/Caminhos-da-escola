@@ -1,0 +1,58 @@
+﻿@model Caminhos_da_escola.Models.Aluno
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhes</title>
+</head>
+<body>
+    <div>
+        <h4>Aluno</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Matricula)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Matricula)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Curso)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Curso)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Semestre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Semestre)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Alunoid }) |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+</body>
+</html>
